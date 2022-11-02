@@ -2,7 +2,7 @@
  * micrographql - template literal GraphQL processor
  */
 
-const nameRe = /^\s*(?:query|mutation)\s+([\w\d-_]+)\s*(?:\(.*?\))?\s*{/
+const nameRe = /^\s*(?:query|mutation)\s+([-\w\d_]+)/
 
 function finalBuilder (str) {
   return function (variables, variablesAsObject) {
